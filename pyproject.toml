@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "karrakass"
+version = "0.1.0"
+description = ""
+authors = ["bestolkovy <f326ehm@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+colorama = "^0.4.6"
+scripts = "^3.0"
+
+[tool.poetry.scripts]
+say-fo = "karrakass.scripts.fo:main"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.22.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
